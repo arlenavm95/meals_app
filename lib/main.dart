@@ -4,9 +4,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:meals_app/screens/tabs.dart';
 
 final theme = ThemeData(
-  colorScheme: ColorScheme.fromSeed(
+  colorScheme: ColorScheme.fromSeed(    
     brightness: Brightness.dark,
-    seedColor: const Color.fromARGB(255, 131, 57, 0),
+    seedColor: const Color.fromARGB(255, 247, 2, 2),
   ),
   textTheme: GoogleFonts.latoTextTheme(),
 );

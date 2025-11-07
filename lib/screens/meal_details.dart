@@ -46,58 +46,60 @@ class MealDetailsScreen extends ConsumerWidget {
           ),
         ],
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Hero(
-              tag: meal.id,
-              child: Image.network(
-                meal.imageUrl,
-                width: double.infinity,
-                height: 300,
-                fit: BoxFit.cover,
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Hero(
+                tag: meal.id,
+                child: Image.network(
+                  meal.imageUrl,
+                  width: double.infinity,
+                  height: 300,
+                  fit: BoxFit.cover,
+                ),
               ),
-            ),
-            const SizedBox(height: 14),
-            Text(
-              'Ingredients',
-              style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                color: Theme.of(context).colorScheme.primary,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const SizedBox(height: 14),
-            for (final ingredients in meal.ingredients)
+              const SizedBox(height: 14),
               Text(
-                ingredients,
-                style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                  color: Theme.of(context).colorScheme.onSurface,
+                'Ingredients',
+                style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                  color: Theme.of(context).colorScheme.primary,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
-            const SizedBox(height: 24),
-            Text(
-              'Steps',
-              style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                color: Theme.of(context).colorScheme.primary,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const SizedBox(height: 14),
-            for (final step in meal.steps)
-              Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 12,
-                  vertical: 8,
-                ),
-                child: Text(
-                  step,
-                  textAlign: TextAlign.center,
+              const SizedBox(height: 14),
+              for (final ingredients in meal.ingredients)
+                Text(
+                  ingredients,
                   style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                     color: Theme.of(context).colorScheme.onSurface,
                   ),
                 ),
+              const SizedBox(height: 24),
+              Text(
+                'Steps',
+                style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                  color: Theme.of(context).colorScheme.primary,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-          ],
+              const SizedBox(height: 14),
+              for (final step in meal.steps)
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 12,
+                    vertical: 8,
+                  ),
+                  child: Text(
+                    step,
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                      color: Theme.of(context).colorScheme.onSurface,
+                    ),
+                  ),
+                ),
+            ],
+          ),
         ),
       ),
     );

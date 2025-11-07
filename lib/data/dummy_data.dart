@@ -4,16 +4,16 @@ import 'package:meals_app/models/category.dart';
 import 'package:meals_app/models/meal.dart';
 
 const availableCategories = [
-  Category(id: 'c1', title: 'Breakfast', color: Colors.purple),
-  Category(id: 'c2', title: 'Lunch', color: Colors.red),
-  Category(id: 'c3', title: 'Dinner', color: Colors.orange),
-  Category(id: 'c4', title: 'Snacks and Appetizers', color: Colors.amber),
-  Category(id: 'c5', title: 'Healthy Meals ', color: Colors.blue),
-  Category(id: 'c6', title: 'High-Protein Meals', color: Colors.green),
-  Category(id: 'c7', title: 'Quick and Easy', color: Colors.lightBlue),
-  Category(id: 'c8', title: 'Desserts and Baking', color: Colors.lightGreen),
-  Category(id: 'c9', title: 'Pasta', color: Colors.pink),
-  Category(id: 'c10', title: 'Hamburgers', color: Colors.teal),
+  Category(id: 'c1', title: 'Breakfast', color: Colors.yellowAccent),
+  Category(id: 'c2', title: 'Lunch', color: Color.fromARGB(255, 246, 173, 2)),
+  Category(id: 'c3', title: 'Dinner', color: Color.fromARGB(255, 8, 3, 154)),
+  Category(id: 'c4', title: 'Snacks and Appetizers', color: Color.fromARGB(255, 145, 3, 167)),
+  Category(id: 'c5', title: 'Healthy Meals ', color: Color.fromARGB(255, 2, 110, 6)),
+  Category(id: 'c6', title: 'High-Protein Meals', color: Color.fromARGB(255, 247, 2, 2)),
+  Category(id: 'c7', title: 'Quick and Easy', color: Color.fromARGB(255, 139, 161, 1)),
+  Category(id: 'c8', title: 'Desserts and Baking', color: Color.fromARGB(255, 108, 2, 48)),
+  Category(id: 'c9', title: 'Pasta', color: Color.fromARGB(255, 204, 57, 4)),
+  Category(id: 'c10', title: 'Hamburgers', color: Color.fromARGB(255, 70, 17, 13)),
 ];
 
 const dummyMeals = [
